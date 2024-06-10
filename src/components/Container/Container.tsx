@@ -6,7 +6,7 @@ interface ContainerProps {
 }
 
 const Container = ({ children }: ContainerProps ) => {
-  return <div className="portfolio-page">{children}</div>;
+  return <div className="portfolio-main">{children}</div>;
 };
 
 export default Container;

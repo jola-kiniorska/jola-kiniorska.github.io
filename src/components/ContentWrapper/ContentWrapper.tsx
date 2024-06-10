@@ -1,8 +1,12 @@
 import React from "react";
 import "./ContentWrapper.scss";
 
-const ContentWrapper = () => {
-  return <div className="content-wrapper"></div>;
+interface ContentWrapperrProps {
+  children: React.ReactNode
+}
+
+const ContentWrapper = ({ children }: ContentWrapperrProps ) => {
+  return <div className="main_content">{children}</div>;
 };
 
 export default ContentWrapper;

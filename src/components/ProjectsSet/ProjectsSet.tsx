@@ -1,15 +1,13 @@
 import React from "react";
-import "./ProjectsSet.scss";
-import ProjectTile from "../ProjectTile/ProjectTile.tsx";
 
 const ProjectsSet = () => {
   return <div className="content_set_projects">
-    <ProjectTile text="crown_of_polish_mountains"/>
-    <ProjectTile text="wedding_flowers"/>
-    <ProjectTile text="nutrition_calculator"/>
-    <ProjectTile text="project_pizzeria"/>
-    <ProjectTile text="stopwatch_app"/>
-    <ProjectTile text="currency_base"/>
+    <p className="content_project-tile">crown_of_polish_mountains</p>
+    <p className="content_project-tile">wedding_flowers</p>
+    <p className="content_project-tile">nutrition_calculator</p>
+    <p className="content_project-tile">project_pizzeria</p>
+    <p className="content_project-tile">stopwatch_app</p>
+    <p className="content_project-tile">currency_base</p>
   </div>;
 };
 

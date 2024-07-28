@@ -1,5 +1,4 @@
 import React from "react";
-import "./Dots.scss";
 import dot_1 from "../../images/dot_1.png";
 import dot_2 from "../../images/dot_2.png";
 import dot_3 from "../../images/dot_3.png";

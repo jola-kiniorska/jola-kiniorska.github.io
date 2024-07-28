@@ -1,8 +1,7 @@
 import React from "react";
-import "./Subtitle.scss";
 
 const Subtitle = ({ subtitle }: { subtitle: string }) => {
-  return <div className="content_subtitle">{subtitle}</div>;
+  return <p className="content_subtitle">{subtitle}</p>;
 };
 
 export default Subtitle;

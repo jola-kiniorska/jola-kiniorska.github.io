@@ -1,0 +1,50 @@
+@import "../../styles/settings.scss";
+
+.main_content-about {
+    margin-bottom: 140px;
+
+    .page_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 150px;
+        margin: 0 10%;
+
+        .flex-wrapper {
+            width: 50%;
+
+            .content_text {
+                font-size: 32px;
+                color: $textColor;
+            }
+
+            &.wrapper-first {
+                .content_text {
+                    text-align: right;
+                }
+            }
+
+            &.wrapper-second {
+                .content_text span {
+                    color: $secondtNavbarColor;
+                }
+
+                .content_set_stickers {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .content_sticker {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: $colorBlack;
+                        width: fit-content;
+                        padding: 10px 18px;
+                        margin: 5px;
+                        border-radius: 12px;
+                        background-color: $stickerBackgroundColor;
+                    }
+                }
+            }
+        }
+    }
+}

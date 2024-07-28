@@ -1,5 +1,4 @@
 import React from "react";
-import "./Contact.scss";
 import Title from "../../components/Title/Title.tsx";
 
 const Contact = () => {

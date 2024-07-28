@@ -1,0 +1,22 @@
+@import "../../styles/settings.scss";
+
+.main_content-projects {
+    margin-bottom: 140px;
+
+    .content_set_projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .content_project-tile {
+            width: 250px;
+            height: 250px;
+            background-color: $stickerBackgroundColor;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 90px;
+        }
+    }
+}

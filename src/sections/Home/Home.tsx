@@ -1,5 +1,4 @@
 import React from "react";
-import "./Home.scss";
 import Title from "../../components/Title/Title.tsx";
 import Subtitle from "../../components/Subtitle/Subtitle.tsx";
 import Dots from "../../components/Dots/Dots.tsx";

@@ -1,11 +1,10 @@
 import React from "react";
-import "./Text.scss";
 
 const Text = ({ text, span }: { text: string, span: string }) => {
-  return <div className="content_text">
+  return <p className="content_text">
     {text}
     <span>{span}</span>
-  </div>;
+  </p>;
 };
 
 export default Text;

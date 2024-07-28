@@ -1,24 +1,22 @@
 import React from "react";
-import "./StickersSet.scss";
-import Sticker from "../Sticker/Sticker.tsx";
 
 const StickersSet = () => {
   return <div className="content_set_stickers">
-    <Sticker text="HTML"/>
-    <Sticker text="CSS"/>
-    <Sticker text="SASS"/>
-    <Sticker text="JavaScript"/>
-    <Sticker text="TypeScript"/>
-    <Sticker text="React"/>
-    <Sticker text="Webpack"/>
-    <Sticker text="PHP"/>
-    <Sticker text="Bitbucket"/>
-    <Sticker text="Docker"/>
-    <Sticker text="Magento"/>
-    <Sticker text="Git"/>
-    <Sticker text="Jira"/>
-    <Sticker text="Confluence"/>
-    <Sticker text="Figma"/>
+    <p className="content_sticker">HTML</p>
+    <p className="content_sticker">CSS</p>
+    <p className="content_sticker">SASS</p>
+    <p className="content_sticker">JavaScript</p>
+    <p className="content_sticker">TypeScript</p>
+    <p className="content_sticker">React</p>
+    <p className="content_sticker">Webpack</p>
+    <p className="content_sticker">PHP</p>
+    <p className="content_sticker">Bitbucket</p>
+    <p className="content_sticker">Docker</p>
+    <p className="content_sticker">Magento</p>
+    <p className="content_sticker">Git</p>
+    <p className="content_sticker">Jira</p>
+    <p className="content_sticker">Confluence</p>
+    <p className="content_sticker">Figma</p>
   </div>;
 };
 

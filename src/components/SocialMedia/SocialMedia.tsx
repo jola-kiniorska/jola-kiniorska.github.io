@@ -1,5 +1,4 @@
 import React from "react";
-import "./SocialMedia.scss";
 
 interface SocialMediaProps {
   icon: string;

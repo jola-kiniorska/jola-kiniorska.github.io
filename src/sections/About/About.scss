@@ -1,0 +1,25 @@
+@import "../../styles/settings.scss";
+
+.main_content-about {
+    .page_content {
+        margin: 0 10%;
+
+        .flex-wrapper {
+            width: 50%;
+        
+            &.wrapper-first {
+                .content_text {
+                    text-align: right;
+                }
+            }
+        
+            &.wrapper-second {
+                .content_text span {
+                    color: $secondtNavbarColor;
+                }
+            }
+        }
+    }
+}
+
+

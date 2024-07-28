@@ -6,25 +6,22 @@ import icon_behance from "../../images/icon_behance.png";
 import SocialMedia from "../../components/SocialMedia/SocialMedia.tsx";
 
 const Navbar = () => {
+
+const scroll = (section) => {
+  document.querySelector(`.main_content-${section}`)?.scrollIntoView({behavior: "smooth", block: "center"});
+}
+
   return (
     <div className="navbar">
       <div className="navbar_wrapper">
-        <a className="logo_link" href="http://localhost:3000/">
+        <div className="logo_link" onClick={() => scroll('home')}>
           <img src={logo} alt="logo" />
-        </a>
+        </div>
         <div className="wrapper_nav-text">
-          <a className="nav-text" href="http://localhost:3000/">
-            Home
-          </a>
-          <a className="nav-text" href="http://localhost:3000/">
-            About
-          </a>
-          <a className="nav-text" href="http://localhost:3000/">
-            Projects
-          </a>
-          <a className="nav-text" href="http://localhost:3000/">
-            Contact
-          </a>
+          <p className="nav-text" onClick={() => scroll('home')}>Home</p>
+          <p className="nav-text" onClick={() => scroll('about')}>About</p>
+          <p className="nav-text" onClick={() => scroll('projects')}>Projects</p>
+          <p className="nav-text" onClick={() => scroll('contact')}>Contact</p>
         </div>
         <div className="wrapper_social-media">
           <SocialMedia

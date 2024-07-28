@@ -1,7 +1,7 @@
 @import "../../styles/settings.scss";
 
 .main_content-projects {
-    margin-bottom: 140px;
+    margin-bottom: 420px;
 
     .content_set_projects {
         display: flex;
@@ -17,6 +17,36 @@
             justify-content: center;
             align-items: center;
             margin: 30px 90px;
+            text-decoration: none;
+
+            .content_text {
+                text-align: center;
+                font-size: 28px;
+                padding: 10px;
+                color: $thirdNavbarColor;
+            }
+
+            .project_links {
+                display: none;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 0px 10px $thirdNavbarColor inset;
+                background-image: url(../../images/project_wedding_flowers.png);
+
+                .content_text {
+                    display: none;
+                }
+
+                .project_links {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 40px;
+                    background-color: $stickerBackgroundColor;
+                    width: 100%;
+                }
+            }
         }
     }
 }

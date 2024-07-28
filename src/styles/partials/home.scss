@@ -1,7 +1,8 @@
 @import "../settings.scss";
 
 .main_content-home {
-    margin: 160px auto;
+    margin: 240px auto 420px;
+    text-align: center;
 
     .dots_set {
         display: flex;
@@ -16,5 +17,9 @@
         color: $titleColor;
         text-align: center;
         margin-bottom: 36px;
+    }
+
+    .content_text {
+        font-size: 40px;
     }
 }

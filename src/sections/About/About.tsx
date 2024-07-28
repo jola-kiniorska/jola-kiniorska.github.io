@@ -8,7 +8,7 @@ const About = () => {
     <Title title="About"/>
     <div className="page_content">
       <div className="flex-wrapper wrapper-first">
-        <Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et feugiat ipsum. Curabitur pulvinar convallis interdum. Ut luctus porta ullamcorper. Sed bibendum nisi ut fermentum efficitur. Fusce ut sapien massa. Duis purus lectus, pulvinar eget fermentum non, blandit eget ex. Vivamus eu tortor ac orci finibus accumsan ac at orci.  Quisque facilisis, ipsum eu mollis malesuada, risus lorem dapibus eros, vel vehicula nulla augue consectetur metus."
+        <Text text=" Programming is a creative task where you can create something out of almost nothing. I am curious about the world surrounding me and I am keen on learning new things and meeting new people. Currently, I care about continuous growing in the field of frontend development."
               span="" />
       </div>
       <div className="flex-wrapper wrapper-second">

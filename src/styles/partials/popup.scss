@@ -1,0 +1,12 @@
+@import "../../styles/settings.scss";
+
+.popup {
+    display: flex;
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    background-color: $thirdNavbarColor;
+    top: 40%;
+    left: 13%;
+    border-radius: 20px;
+}

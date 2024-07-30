@@ -3,10 +3,52 @@
 .popup {
     display: flex;
     position: absolute;
-    width: 75%;
+    width: 50%;
     height: 75%;
     background-color: $thirdNavbarColor;
     top: 40%;
-    left: 13%;
+    left: 20%;
     border-radius: 20px;
+    padding: 42px 24px 24px;
+
+    &.hidden {
+        display: none;
+    }
+
+    &_elem {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: $colorWhite;
+        text-align: center;
+
+        &-description {
+            font-size: 18px;
+            padding: 8px;
+        }
+
+        &-title {
+            font-size: 18px;
+        }
+
+        &.popup_image {
+            border-inline: 1px solid $colorWhite;
+
+            img {
+                width: fit-content;
+                height: 80%;
+                align-self: center;
+            }
+        }
+    }
+
+    &_close {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 15px;
+        top: 12px;
+        cursor: pointer;
+    }
 }

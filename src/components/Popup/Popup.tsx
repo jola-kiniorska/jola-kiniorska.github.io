@@ -19,7 +19,9 @@ const Popup = ({ description, page_screen, technologies }: PopupProps) => {
         className="popup_close"
         src={closeIcon}
         alt="popup_close"
-        onClick={(event)=>{closePopup(event)}}
+        onClick={(event) => {
+          closePopup(event);
+        }}
       />
       <div className="popup_elem popup_description">
         <p className="popup_elem-title">DESCRIPTION</p>

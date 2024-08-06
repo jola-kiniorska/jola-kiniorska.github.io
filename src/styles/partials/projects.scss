@@ -1,8 +1,12 @@
 @import "../../styles/settings.scss";
 
 .main_content-projects {
-    margin-bottom: 420px;
+    margin-bottom: 180px;
     position: relative;
+
+    @include desktop {
+        margin-bottom: 420px;
+    }
 
     .content_set_projects {
         display: flex;
@@ -10,24 +14,35 @@
         justify-content: center;
 
         .content_project-tile {
-            width: 250px;
-            height: 250px;
+            width: 180px;
+            height: 180px;
             background-color: $stickerBackgroundColor;
             border-radius: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 30px 90px;
+            margin: 25px 20px;
             text-decoration: none;
             background-image: unset;
+
+            @include desktop {
+                width: 250px;
+                height: 250px;
+                margin: 30px 90px;
+            }
 
             .content_text {
                 width: 100%;
                 text-align: center;
-                font-size: 28px;
-                padding: 10px;
+                font-size: 18px;
+                padding: 8px;
                 color: $colorWhite;
                 background-color: rgba(0,102,102, 0.6);
+
+                @include desktop {
+                    font-size: 28px;
+                    padding: 10px;
+                }
             }
 
             .project_links {
@@ -45,20 +60,30 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
-                    gap: 30px;
+                    gap: 20px;
                     background-color: $stickerBackgroundColor;
                     width: 100%;
                     box-shadow:
                         5px 0 $thirdNavbarColor inset,
                         -5px 0 $thirdNavbarColor inset;
-                    padding: 10px 0;
+                    padding: 7px 0;
+
+                    @include desktop {
+                        gap: 30px;
+                        padding: 10px 0;
+                    }
 
                     .project_link {
                         cursor: pointer;
                         
                         img {
-                            width: 44px;
-                            height: 44px;
+                            width: 36px;
+                            height: 36px;
+
+                            @include desktop {
+                                width: 44px;
+                                height: 44px;
+                            }
                         }
                     }
                 }

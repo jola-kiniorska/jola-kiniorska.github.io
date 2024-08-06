@@ -2,18 +2,26 @@
 
 .navbar {
     background: linear-gradient($firstNavbarColor, $secondtNavbarColor, $thirdNavbarColor, $fourthtNavbarColor);
-    width: 20%;
     display: block;
+
+    @include desktop {
+        width: 20%;
+    }
 
     .navbar_wrapper {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: fixed;
-        text-align: center;
-        height: -webkit-fill-available;
-        width: inherit;
-        padding: 80px 0 36px;
+        flex-direction: row;
+        justify-content: center;
+
+        @include desktop {
+            flex-direction: column;
+            justify-content: space-between;
+            position: fixed;
+            text-align: center;
+            height: -webkit-fill-available;
+            width: inherit;
+            padding: 80px 0 36px;
+        }
 
         .logo_link {
             img {
@@ -29,18 +37,29 @@
 
         .wrapper_nav-text {
             display: flex;
-            flex-direction: column;
-            gap: 36px;
-            margin-bottom: 132px;
+            flex-direction: row;
+            gap: 20px;
+            padding: 26px 0;
+
+            @include desktop {
+                flex-direction: column;
+                gap: 36px;
+                margin-bottom: 132px;
+                padding: 0;
+            }
 
             .nav-text {
-                font-size: 36px;
+                font-size: 22px;
                 color: white;
                 margin: 0;
                 cursor: pointer;
 
                 &:hover {
                     text-shadow: 3px 3px #818589;
+                }
+
+                @include desktop {
+                    font-size: 36px;
                 }
             }
         }

@@ -1,25 +1,53 @@
 @import "../settings.scss";
 
 .main_content-home {
-    margin: 240px auto 420px;
+    margin: 120px auto 180px;
     text-align: center;
+
+    @include desktop {
+        margin: 240px auto 420px;
+    }
 
     .dots_set {
         display: flex;
         justify-content: center;
-        gap: 36px;
+        gap: 18px;
         align-items: center;
-        margin-bottom: 84px;
+        margin-bottom: 64px;
+
+        @include desktop {
+            margin-bottom: 84px;
+        }
+
+        img {
+            width: 5%;
+
+            @include desktop {
+                width: auto;
+            }
+        }
+
+        @include desktop {
+            gap: 36px;
+        }
     }
 
     .content_subtitle {
-        font-size: 48px;
+        font-size: 32px;
         color: $titleColor;
         text-align: center;
         margin-bottom: 36px;
+
+        @include desktop {
+            font-size: 48px;
+        }
     }
 
     .content_text {
-        font-size: 40px;
+        font-size: 28px;
+
+        @include desktop {
+            font-size: 40px;
+        }
     }
 }

@@ -35,13 +35,13 @@ body {
 
         .content_title {
             font-family: $mainFont;
-            font-size: 32px;
+            font-size: 28px;
             color: $titleColor;
             text-align: center;
-            margin-bottom: 64px;
+            margin-bottom: 42px;
 
             @include desktop {
-                font-size: 64px;
+                font-size: 54px;
                 text-shadow: 1px 1px #818589;
                 margin-bottom: 84px;
             }

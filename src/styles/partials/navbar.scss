@@ -28,6 +28,7 @@
                 width: fit-content;
                 align-self: center;
                 cursor: pointer;
+                width: 124px;
 
                 &:hover {
                     filter: drop-shadow(4px 4px #818589);
@@ -43,7 +44,7 @@
 
             @include desktop {
                 flex-direction: column;
-                gap: 36px;
+                gap: 40px;
                 margin-bottom: 132px;
                 padding: 0;
             }
@@ -59,7 +60,7 @@
                 }
 
                 @include desktop {
-                    font-size: 36px;
+                    font-size: 32px;
                 }
             }
         }

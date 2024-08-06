@@ -1,11 +1,11 @@
 @import "../settings.scss";
 
 .main_content-home {
-    margin: 120px auto 180px;
+    padding: 120px 0 140px;
     text-align: center;
 
     @include desktop {
-        margin: 240px auto 420px;
+        padding: 140px 0 240px;
     }
 
     .dots_set {
@@ -17,6 +17,7 @@
 
         @include desktop {
             margin-bottom: 84px;
+            gap: 42px;
         }
 
         img {
@@ -25,10 +26,6 @@
             @include desktop {
                 width: auto;
             }
-        }
-
-        @include desktop {
-            gap: 36px;
         }
     }
 
@@ -39,7 +36,7 @@
         margin-bottom: 36px;
 
         @include desktop {
-            font-size: 48px;
+            font-size: 42px;
         }
     }
 
@@ -47,7 +44,7 @@
         font-size: 28px;
 
         @include desktop {
-            font-size: 40px;
+            font-size: 36px;
         }
     }
 }

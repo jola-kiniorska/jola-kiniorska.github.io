@@ -1,7 +1,7 @@
 @import "../../styles/settings.scss";
 
 .main_content-projects {
-    padding: 30px 0 140px;
+    padding: 60px 0 140px;
     position: relative;
 
     @include desktop {
@@ -24,6 +24,7 @@
             margin: 25px 20px;
             text-decoration: none;
             background-image: unset;
+            cursor: pointer;
 
             @include desktop {
                 width: 250px;

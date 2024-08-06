@@ -5,6 +5,7 @@
 @import "partials/contact.scss";
 @import "partials/navbar.scss";
 @import "partials/popup.scss";
+@import "partials/footer.scss";
 
 body {
     margin: 0;
@@ -12,6 +13,7 @@ body {
 
     p, a {
         font-family: $mainFont;
+        margin: 0;
     }
 }
 
@@ -35,10 +37,10 @@ body {
 
         .content_title {
             font-family: $mainFont;
-            font-size: 28px;
+            font-size: 30px;
             color: $titleColor;
             text-align: center;
-            margin-bottom: 42px;
+            margin-bottom: 48px;
 
             @include desktop {
                 font-size: 54px;

@@ -6,6 +6,8 @@ import Home from "../../sections/Home/Home.tsx";
 import About from "../../sections/About/About.tsx";
 import Projects from "../../sections/Projects/Projects.tsx";
 import Contact from "../../sections/Contact/Contact.tsx";
+import Footer from "../../sections/Footer/Footer.tsx";
+import Popup from "../../components/Popup/Popup.tsx";
 
 const MainPage = () => {
   return (
@@ -15,7 +17,9 @@ const MainPage = () => {
         <Home />
         <About />
         <Projects />
+        <Popup />
         <Contact />
+        <Footer />
       </ContentWrapper>
     </Container>
   );

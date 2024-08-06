@@ -1,7 +1,7 @@
 @import "../../styles/settings.scss";
 
 .main_content-about {
-    padding: 30px 0 140px;
+    padding: 60px 0 140px;
     background-color: #FAF9F6;
 
     @include desktop {
@@ -47,11 +47,6 @@
             &.wrapper-second {
                 .content_text {
                     padding-bottom: 20px;
-
-                    span {
-                        color: $secondtNavbarColor;
-                        font-weight: 600;
-                    }
                 }
                 
                 .content_set_stickers {
@@ -61,13 +56,13 @@
 
                     .content_sticker {
                         font-size: 16px;
-                        font-weight: 600;
-                        color: $colorBlack;
+                        font-weight: 500;
+                        color: $colorWhite;
                         width: fit-content;
                         padding: 10px 18px;
                         margin: 7px;
                         border-radius: 12px;
-                        background-color: $stickerBackgroundColor;
+                        background-color: #008080;
 
                         @include desktop {
                             font-size: 18px;

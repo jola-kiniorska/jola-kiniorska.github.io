@@ -3,7 +3,7 @@ import Text from "../Text/Text.tsx";
 import github2 from "../../images/icon_github2.png";
 import website from "../../images/icon_website.png";
 import info from "../../images/icon_info.png";
-import Popup from "../Popup/Popup.tsx";
+// import Popup from "../Popup/Popup.tsx";
 
 interface ProjectTileProps {
   text: string;
@@ -40,7 +40,7 @@ const ProjectTile = ({
       className="content_project-tile"
       style={{ backgroundImage: `url(${background_image})` }}
     >
-      <Text text={text} span="" />
+      <Text text={text} />
       <div className="project_links">
         <a className="project_link" href={link_github}>
           <img className="github" src={github2} alt="github" />
@@ -57,11 +57,11 @@ const ProjectTile = ({
           />
         </div>
       </div>
-      <Popup
+      {/* <Popup
         description={description}
         page_screen={page_screen}
         technologies={technologies}
-      />
+      /> */}
     </div>
   );
 };

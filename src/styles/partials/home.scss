@@ -30,7 +30,7 @@
     }
 
     .content_subtitle {
-        font-size: 32px;
+        font-size: 24px;
         color: $titleColor;
         text-align: center;
         margin-bottom: 36px;
@@ -41,7 +41,7 @@
     }
 
     .content_text {
-        font-size: 28px;
+        font-size: 20px;
 
         @include desktop {
             font-size: 36px;

@@ -1,54 +1,78 @@
 @import "../../styles/settings.scss";
 
-.popup {
-    display: flex;
-    position: absolute;
-    width: 50%;
-    height: 75%;
-    background-color: $thirdNavbarColor;
-    top: 40%;
-    left: 20%;
-    border-radius: 20px;
-    padding: 42px 24px 24px;
-
-    &.hidden {
-        display: none;
+.popup_container {
+    .popup_overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 10001;
     }
 
-    &_elem {
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        color: $colorWhite;
-        text-align: center;
+    .popup {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #b4b4b4;
+        padding-top: 36px;
+        z-index: 10002;
 
-        &-description {
-            font-size: 18px;
-            padding: 8px;
+        @include desktop {
+            flex-direction: row;
+            width: 720px;
+            height: 320px;
         }
 
-        &-title {
-            font-size: 18px;
+        &.hidden {
+            display: none;
         }
 
-        &.popup_image {
-            border-inline: 1px solid $colorWhite;
+        &_elem {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color: $colorWhite;
+            text-align: center;
 
-            img {
-                width: fit-content;
-                height: 80%;
-                align-self: center;
+            @include desktop {
+                width: 33%;
+            }
+
+            &-description {
+                font-size: 18px;
+                padding: 8px;
+            }
+
+            &-title {
+                font-size: 18px;
+                font-weight: 600;
+                color: $thirdNavbarColor;
+                padding-bottom: 24px;
+            }
+
+            &.popup_image {
+                @include desktop {
+                    border-inline: 1px solid $colorWhite;
+                }
+
+                img {
+                    width: 50%;
+                    align-self: center;
+                }
             }
         }
-    }
 
-    &_close {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        right: 15px;
-        top: 12px;
-        cursor: pointer;
+        &_close {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: 15px;
+            top: 12px;
+            cursor: pointer;
+        }
     }
 }

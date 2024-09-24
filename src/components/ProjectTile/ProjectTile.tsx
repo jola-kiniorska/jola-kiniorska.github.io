@@ -23,10 +23,10 @@ const ProjectTile = ({
     >
       <Text text={text} />
       <div className="project_links">
-        <a className="project_link" href={link_github}>
+        <a className="project_link" href={link_github} target="_blank" rel="noopener noreferrer">
           <img className="github" src={github2} alt="github" />
         </a>
-        <a className="project_link" href={link_website}>
+        <a className="project_link" href={link_website} target="_blank" rel="noopener noreferrer">
           <img className="website" src={website} alt="website" />
         </a>
       </div>

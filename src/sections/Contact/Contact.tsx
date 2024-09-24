@@ -22,10 +22,10 @@ const Contact = () => {
         <div className="contact_wrapper">
           <img src={contact_website} alt="contact-phone" />
           <p className="contact_title">WEBSITES</p>
-          <a className="contact_text" href="https://www.linkedin.com/in/jolanta-klodowska/">
+          <a className="contact_text" href="https://www.linkedin.com/in/jolanta-klodowska/" target="_blank" rel="noopener noreferrer">
             Linkedin
           </a>
-          <a className="contact_text" href="https://github.com/jola-klodowska">Github</a>
+          <a className="contact_text" href="https://github.com/jola-klodowska" target="_blank" rel="noopener noreferrer">Github</a>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 @import "../settings.scss";
 
 .main_content-home {
-    padding: 120px 0 140px;
+    padding: 140px 0 140px;
     text-align: center;
 
     @include desktop {
-        padding: 140px 0 240px;
+        padding: 180px 0 240px;
     }
 
     .dots_set {
@@ -14,6 +14,7 @@
         gap: 18px;
         align-items: center;
         margin-bottom: 64px;
+        opacity: 0.7;
 
         @include desktop {
             margin-bottom: 84px;
@@ -34,6 +35,7 @@
         color: $titleColor;
         text-align: center;
         margin-bottom: 36px;
+        font-weight: 500;
 
         @include desktop {
             font-size: 42px;
@@ -42,6 +44,7 @@
 
     .content_text {
         font-size: 20px;
+        font-weight: 300;
 
         @include desktop {
             font-size: 36px;

@@ -7,7 +7,7 @@ import SocialMedia from "../../components/SocialMedia/SocialMedia.tsx";
 import { isMobile } from "react-device-detect";
 
 const Navbar = () => {
-  const scroll = (section) => {
+  const scroll = (section: string) => {
     document
       .querySelector(`.main_content-${section}`)
       ?.scrollIntoView({ behavior: "smooth", block: "center" });

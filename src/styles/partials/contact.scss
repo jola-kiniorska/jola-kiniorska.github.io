@@ -39,6 +39,7 @@
 
             .contact_title {
                 font-weight: 600;
+                color: $textColor;
 
                 @include desktop {
                     font-size: 18px;
@@ -47,6 +48,7 @@
 
             .contact_text {
                 font-size: 14px;
+                color: $textColor;
 
                 @include desktop {
                     font-size: 16px;

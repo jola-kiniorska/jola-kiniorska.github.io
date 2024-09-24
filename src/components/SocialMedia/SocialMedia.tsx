@@ -7,7 +7,7 @@ interface SocialMediaProps {
 
 const SocialMedia = ({ icon, link }: SocialMediaProps) => {
   return (
-    <a className="link" href={link}>
+    <a className="link" href={link} target="_blank" rel="noopener noreferrer">
       <img src={icon} alt={"social-media"}></img>
     </a>
   );

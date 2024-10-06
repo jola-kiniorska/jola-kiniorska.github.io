@@ -22,7 +22,7 @@ const ProjectsSet = () => {
       <ProjectTile
         text="nutrition calculator"
         link_github="https://github.com/jola-klodowska/nutrition-calculator"
-        link_website=""
+        link_website="https://lemon-bay-00e72a103.5.azurestaticapps.net/"
         background_image={project_nutrition_calc}
       />
     </div>

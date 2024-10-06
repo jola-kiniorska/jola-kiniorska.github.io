@@ -32,8 +32,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "19"
           cache: npm
+          check-latest: true
       - name: Restore cache
         uses: actions/cache@v4
         with:

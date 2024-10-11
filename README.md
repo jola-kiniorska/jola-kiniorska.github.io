@@ -30,7 +30,8 @@ Project is created with:
 
 ## Website url
 
+[Portfolio Page](https://jola-kiniorska.github.io/)
 
 ## Website screenshot
 
-<img src="./public/images/app_screen.png" alt="app-screenshot">
+<img src="./src/images/screenshot_home.png" alt="app-screenshot">

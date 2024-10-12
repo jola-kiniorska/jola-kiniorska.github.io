@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="wrapper_social-media">
             <SocialMedia
               icon={icon_github}
-              link={"https://github.com/jola-klodowska"}
+              link={"https://github.com/jola-kiniorska"}
             />
             <SocialMedia
               icon={icon_linkedin}
